@@ -1,2 +1,6 @@
 build
 *.kdev4
+
+*/CMakeFiles/
+*/cmake_install.cmake
+*/Makefile
