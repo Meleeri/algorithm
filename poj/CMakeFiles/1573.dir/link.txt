@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/1573.dir/1573.o  -o 1573 -rdynamic 

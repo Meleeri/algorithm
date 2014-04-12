@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/3020.dir/3020.o  -o 3020 -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/100.dir/100.o  -o 100 -rdynamic 

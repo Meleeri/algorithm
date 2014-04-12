@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/2240.dir/2240.o  -o 2240 -rdynamic 

@@ -1,0 +1,6 @@
+aux_source_directory(. SRCLIST)
+foreach(src_file ${SRCLIST})
+  string(REPLACE "./" "" target_file ${src_file})
+  string(REPLACE ".cpp" "" target_file ${target_file})
+  add_executable(${target_file} ${src_file})
+endforeach(src_file ${SRCLIST})

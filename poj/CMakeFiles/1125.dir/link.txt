@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/1125.dir/1125.o  -o 1125 -rdynamic 
