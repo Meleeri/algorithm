@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/3213.dir/3213.o  -o 3213 -rdynamic 

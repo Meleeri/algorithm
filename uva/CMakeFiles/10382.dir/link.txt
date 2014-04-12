@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/10382.dir/10382.o  -o 10382 -rdynamic 

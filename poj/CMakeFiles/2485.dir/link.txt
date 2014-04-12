@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/2485.dir/2485.o  -o 2485 -rdynamic 

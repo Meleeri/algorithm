@@ -1,1 +1,0 @@
-/usr/bin/c++   -g    CMakeFiles/3041.dir/3041.o  -o 3041 -rdynamic 
