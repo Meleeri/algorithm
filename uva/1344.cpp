@@ -6,7 +6,6 @@ using namespace std;
 long long tian[1024], king[1024];
 
 int main() {
-  freopen("input.txt", "r", stdin);
   int N;
   while (scanf("%d", &N), N) {
     for (int i = 0; i < N; ++ i) {
@@ -16,22 +15,36 @@ int main() {
       scanf("%lld", &king[i]);  
     }
     
-    sort(tian, tian+N);
-    sort(king, king+N);
+    auto cmp = [&](int x, int y) {return x > y;};
+    
+    sort(tian, tian+N, cmp);
+    sort(king, king+N, cmp);
     
     int ans = 0;
-    int j = 0, r = N-1;
-    
-    for (int i = 0; i < N && j < N; ++ i) {
+    int fin_k = N-1, fin_t = N-1; 
+    for (int i = 0, j = 0; i <= fin_t && j < N; ++ j) {
       if (tian[i] < king[j]) {
 	ans -= 200;
-	-- r;
+	-- fin_t;
       }
       else if (tian[i] > king[j]){
 	ans += 200;
-	++ j;
+	++ i;
       }
       else {
+	for (int m = fin_t, k = fin_k; m >=i; --m, -- k) {
+	    if (tian[m] > king[k]) {
+	      ans += 200;
+	      -- fin_k, -- fin_t;
+	    }
+	    else {
+	      if (tian[m] < king[j]) {
+		ans -= 200;
+	      }
+	      fin_t = m-1; fin_k = k;
+	      break;
+	    }
+	}
       }
     }
     printf("%d\n", ans);
