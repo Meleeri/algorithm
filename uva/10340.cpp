@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-  freopen("input.txt", "r", stdin);
+//  freopen("input.txt", "r", stdin);
   std::string sub, s;
   while (std::cin >> sub >> s) {
     int i = 0;
